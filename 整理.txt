@@ -1,0 +1,32 @@
+(創檔案) sudo nano 檔名.py
+(寫程式) nano 檔名.py
+(寫入) sudo chmod a+x <檔名>
+(執行) ./檔名
+
+(root) cd Adafruit_Python_DHT   cd examples  sudo ./AdafruitDHT.py 11 4 (溫度+mcs)
+GPIO4
+
+(root)   blink17 (亮滅10次)  + >GPIO4
+
+(MCS) cd MCS  mcsio.py (溫溼度+開關先是在mcs上) GPIO4(溫溼度) GPIO24(SWITCH)
+
+(MCS) cd MCS mcslsdd.py (mcs開關控制led) GPIO4(led)
+
+(MCS) cd MCS fire.py (IFTTT溫度超過顯示在手機上) GPIO4(溫溼度)
+ 
+(網頁) Flow1 LED(GPIO 24) +SWITCH(GPIO4)
+
+(網頁) Flow2  溫溼度值顯示到網頁上
+
+(網頁) Flow5 溫溼度值顯示到mcs上
+
+(網頁) Flow3 數字隨機產生再網頁上 http://172.20.10.2:1880/data
+
+(網頁) Flow4 在網頁上顯示buttom的狀態0或1 http://172.20.10.2:1880/pin4
+
+(網頁) Flow6 用網頁控制LED開或關 
+  http://172.20.10.2:1880/setgpio5
+  http://172.20.10.2:1880/clear5
+
+
+
